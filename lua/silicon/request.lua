@@ -69,7 +69,11 @@ M.exec = function(range, show_buffer, copy_to_board)
           else
             msg = string.format("Snap saved to %s", opts.output)
           end
-          vim.notify(msg, vim.log.levels.INFO, { plugin = "silicon.lua" })
+          vim.notify(
+            "Silicon:" .. msg,
+            vim.log.levels.INFO,
+            { plugin = "silicon.lua" }
+          )
         else
           vim.defer_fn(function()
             vim.notify(string.format(
