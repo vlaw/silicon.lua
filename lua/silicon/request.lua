@@ -88,7 +88,7 @@ M.exec = function(range, show_buffer, copy_to_board)
       end,
       on_stderr = function(_, data)
         if opts.debug then
-          print(vim.inspect(data))
+          print("DEBUG: data = " .. vim.inspect(data))
         end
       end,
       writer = contents,
