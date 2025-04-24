@@ -6,10 +6,10 @@ M.setup = function(opts)
 end
 
 ---@class SiliconArgs
----@field show_buf boolean whether to show buffer
----@field to_clip boolean whether to show clipboard
----@field visible boolean whether to render visible buffer
----@field cmdline boolean whether to work around cmdline issues
+---@field show_buf boolean? whether to show buffer
+---@field to_clip boolean? whether to show clipboard
+---@field visible boolean? whether to render visible buffer
+---@field cmdline boolean? whether to work around cmdline issues
 
 --- Generates image of selected region
 ---@param opts SiliconArgs
